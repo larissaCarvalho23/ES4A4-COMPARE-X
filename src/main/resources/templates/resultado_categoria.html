@@ -26,31 +26,21 @@ form{
 
 <body>
     <div class="container-fluid">
-    <form method="GET" th:action="@{/search}" class="row navbar navbar-dark  bg-danger flex-md-nowrap p-4 px-md-4 mb-3 shadow">
+    <form method="GET" th:action="@{/categoria}" class="row navbar navbar-dark  bg-danger flex-md-nowrap p-4 px-md-4 mb-3 shadow">
         <a class="navbar-brand col-sm-3 col-md-3 mr-0" href="#">CompareX</a>
 
             <input name="pesquisar" class="form-control form-control-danger w-50" type="text"id ="input_princi" placeholder="digite o produto"
                 aria-label="Search">
             <div class="col-sm-4">
                 <button type="submit" id="comparar" class="btn btn-warning">Pesquisar <img th:src="@{/img/search-solid.svg}" alt=""
-                        height="14" width="14"></button>
-                   
+                        height="14" width="14"></button>        
             </div>
         
           </form>
 
     </div>
     <div class="container">
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="resultado_categoria.html">Loja 1</a>
-                <a class="p-2 text-muted" href="#">Loja 2</a>
-                <a class="p-2 text-muted" href="#">Loja 3</a>
-                <a class="p-2 text-muted" href="#">Loja 4</a>
-            </nav>
-        </div>
-    </div>
-    <hr>
+    
     <div class="pricing-header px-2 py-2 pt-md-4 pb-md-3 mx-auto text-center">
         <h1 class="display-4">Preços</h1>
         <p class="lead">Encontre comparativos de preços dos produtos pesquisados.</p>
@@ -98,7 +88,6 @@ form{
     </footer>
 </body>
 </html>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

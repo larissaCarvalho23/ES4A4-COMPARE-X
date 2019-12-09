@@ -37,6 +37,11 @@ public class HomeController {
 
        return "comum/resultado_busca";
    }
+      @GetMapping(value = "/categoria", params = {""})
+   public String categoria(""){
+
+       return "comum/resultado_categoria";
+   }
    /**
     * @return the repository
     */
